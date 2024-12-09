@@ -1,10 +1,11 @@
 import React, { useState } from "react";
+import FAQIMAGE from "../../assets/faq/faq.png";
 import FAQ_BG from "../../assets/faq/faq-bg.png";
 import FAQ_A_BG from "../../assets/faq/a-bg.png";
 import FAQ_Q_BG from "../../assets/faq/q-bg.png";
 
 export default function FAQ() {
-  const [activeIndex, setActiveIndex] = useState(null);
+  const [activeIndex, setActiveIndex] = useState(0); // Default to the first FAQ
 
   const toggleFAQ = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -57,12 +58,7 @@ export default function FAQ() {
       <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Section */}
         <div className="mx-auto lg:mx-0">
-          <h2 className="text-white text-4xl font-bold">
-            Frequently Asked Questions
-          </h2>
-          <p className="text-white mt-4">
-            Find answers to the most commonly asked questions about SHEP token.
-          </p>
+          <img src={FAQIMAGE} alt="FAQ" />
         </div>
 
         {/* Right Section */}
@@ -79,7 +75,8 @@ export default function FAQ() {
                   backgroundSize: "",
                 }}
               >
-                <div className="w-1 h-1 bg-white rounded-full"></div> {faq.question}
+                <div className="w-1 h-1 bg-white rounded-full"></div>
+                {faq.question}
               </button>
 
               {/* Answer Section */}
