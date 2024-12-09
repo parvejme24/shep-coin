@@ -1,13 +1,14 @@
 const defaultTheme = require("tailwindcss/defaultTheme");
+
 /** @type {import('tailwindcss').Config} */
-export default {
+module.exports = {
   content: ["./index.html", "./src/**/*.{js,ts,jsx,tsx}"],
   theme: {
     extend: {
       fontFamily: {
         halodick: [
-          "HaloDek-MAdae", // This is one of the styles
-          "HaloDek-rvd7O", // Another style
+          "HaloDek-MAdae",
+          "HaloDek-rvd7O",
           ...defaultTheme.fontFamily.sans,
         ],
         comicsans: [
