@@ -1,0 +1,85 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Halo Dick Fonts */
+@font-face {
+  font-family: "HaloDek-MAdae";
+  src: url("./assets/fonts/HaloDek-MAdae.woff2") format("woff2"),
+    url("./assets/fonts/HaloDek-MAdae.woff") format("woff"),
+    url("./assets/fonts/HaloDek-MAdae.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "HaloDek-rvd7O";
+  src: url("./assets/fonts/HaloDek-rvd7O.woff2") format("woff2"),
+    url("./assets/fonts/HaloDek-rvd7O.woff") format("woff"),
+    url("./assets/fonts/HaloDek-rvd7O.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+/* Comic Sans MS Fonts */
+@font-face {
+  font-family: "COMIC";
+  src: url("./assets/fonts/COMIC.woff2") format("woff2"),
+    url("./assets/fonts/COMIC.woff") format("woff"),
+    url("./assets/fonts/COMIC.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "comici";
+  src: url("./assets/fonts/comici.woff2") format("woff2"),
+    url("./assets/fonts/comici.woff") format("woff"),
+    url("./assets/fonts/comici.ttf") format("truetype");
+  font-weight: normal;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ComicSansMS3";
+  src: url("./assets/fonts/ComicSansMS3.woff2") format("woff2"),
+    url("./assets/fonts/ComicSansMS3.woff") format("woff"),
+    url("./assets/fonts/ComicSansMS3.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "comicz";
+  src: url("./assets/fonts/comicz.woff2") format("woff2"),
+    url("./assets/fonts/comicz.woff") format("woff"),
+    url("./assets/fonts/comicz.ttf") format("truetype");
+  font-weight: bold;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "design.graffiti.comicsansms";
+  src: url("./assets/fonts/design.graffiti.comicsansms.woff2") format("woff2"),
+    url("./assets/fonts/design.graffiti.comicsansms.woff") format("woff"),
+    url("./assets/fonts/design.graffiti.comicsansms.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "design.graffiti.comicsansmsgras";
+  src: url("./assets/fonts/design.graffiti.comicsansmsgras.woff2")
+      format("woff2"),
+    url("./assets/fonts/design.graffiti.comicsansmsgras.woff") format("woff"),
+    url("./assets/fonts/design.graffiti.comicsansmsgras.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Reset for Consistency */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: system-ui, sans-serif;
+}
