@@ -7,6 +7,7 @@ import RoadMap from "./components/RoadMap/RoadMap";
 import GamePlay from "./components/GamePlay/GamePlay";
 import TokenOmics from "./components/TokenOmics/TokenOmics";
 import WhoAreWe from "./components/WhoAreWe/WhoAreWe";
+import PawfulWorld from "./components/PawfulWorld/PawfulWorld";
 
 export default function App() {
   return (
@@ -16,6 +17,7 @@ export default function App() {
       <WhoAreWe />
       <TokenOmics />
       <GamePlay />
+      <PawfulWorld />
       <RoadMap />
       <FAQ />
       <Footer />
