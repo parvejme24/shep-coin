@@ -8,12 +8,14 @@ import GamePlay from "./components/GamePlay/GamePlay";
 import TokenOmics from "./components/TokenOmics/TokenOmics";
 import WhoAreWe from "./components/WhoAreWe/WhoAreWe";
 import PawfulWorld from "./components/PawfulWorld/PawfulWorld";
+import Shep from "./components/Shep/Shep";
 
 export default function App() {
   return (
     <div>
       <Navbar />
       <Banner />
+      <Shep />
       <WhoAreWe />
       <TokenOmics />
       <GamePlay />

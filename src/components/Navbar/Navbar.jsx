@@ -12,12 +12,12 @@ export default function Navbar() {
 
   return (
     <nav className="bg-white shadow-md">
-      <div className="container mx-auto flex justify-between items-center py-5 px-4 md:px-0">
+      <div className="max-w-7xl container mx-auto flex justify-between items-center py-5 px-4 md:px-0">
         {/* Logo */}
         <img src={LOGO} alt="Logo" className="w-24" />
 
         {/* Desktop Menu */}
-        <ul className="hidden md:flex items-center gap-8 font-comicsans text-gray-800">
+        <ul className="hidden md:flex items-center gap-8 font-halodick text-gray-100 font-light">
           <li>
             <a href="/" className="hover:text-red-500 transition duration-300">
               Home

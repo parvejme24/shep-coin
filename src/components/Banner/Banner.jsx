@@ -7,10 +7,10 @@ import { FaArrowRight } from "react-icons/fa";
 export default function Banner() {
   return (
     <div
-      className="-mt-[110px] min-h-screen bg-cover bg-center"
+      className="-mt-[110px] min-h-screen pb-28 bg-cover bg-center"
       style={{ backgroundImage: `url(${BANNER_BG})` }}
     >
-      <div className="container mx-auto px-5 md:px-0 pt-36">
+      <div className="max-w-7xl container mx-auto px-5 md:px-0 pt-36">
         <div className="flex flex-col items-center justify-center h-full space-y-4">
           <img src={HEADING} alt="Heading" className="w-auto max-w-full" />
           <img

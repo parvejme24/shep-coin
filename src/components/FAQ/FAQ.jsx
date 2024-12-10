@@ -55,7 +55,7 @@ export default function FAQ() {
       className="py-20 bg-[#1788A8] bg-cover bg-center"
       style={{ backgroundImage: `url(${FAQ_BG})` }}
     >
-      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="max-w-7xl container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Section */}
         <div className="mx-auto lg:mx-0">
           <img src={FAQIMAGE} alt="FAQ" />

@@ -21,7 +21,7 @@ export default function Footer() {
         className="bg-cover bg-center text-white h-auto mt-1"
         style={{ backgroundImage: `url(${FD_BG})` }}
       >
-        <div className="container mx-auto px-4 py-10">
+        <div className="max-w-7xl container mx-auto px-4 py-10">
           {/* Logo and Social Links Section */}
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Logo */}
