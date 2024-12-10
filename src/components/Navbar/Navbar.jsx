@@ -11,10 +11,10 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md">
+    <nav className="bg-white shadow-md tracking-[0.14em]">
       <div className="max-w-7xl container mx-auto flex justify-between items-center py-5 px-4 md:px-0">
         {/* Logo */}
-        <img src={LOGO} alt="Logo" className="w-24" />
+        <img src={LOGO} alt="Logo" className="w-24" draggable="false" />
 
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 font-halodick text-gray-100 font-light">

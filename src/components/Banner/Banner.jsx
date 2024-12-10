@@ -12,13 +12,14 @@ export default function Banner() {
     >
       <div className="max-w-7xl container mx-auto px-5 md:px-0 pt-36">
         <div className="flex flex-col items-center justify-center h-full space-y-4">
-          <img src={HEADING} alt="Heading" className="w-auto max-w-full" />
+          <img src={HEADING} draggable="false" alt="Heading" className="w-auto max-w-full" />
           <img
             src={BANNER_IMAGE}
             alt="Banner"
             className="mx-auto max-w-[450px] w-[450px]"
+            draggable="false" 
           />
-          <p className="font-halodick text-white text-center max-w-[600px] w-[600px]">
+          <p className="tracking-[0.13em] font-halodick text-white text-center max-w-[600px] w-[600px]">
             Every token helps make a difference for animal shelters worldwide.
             Join our mission to support animals and create a vibrant,
             community-driven ecosystem powered by cryptocurrency.

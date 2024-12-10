@@ -10,7 +10,7 @@ export default function WhoAreWe() {
       style={{ backgroundImage: `url(${BG})` }}
     >
       <div className="max-w-7xl container mx-auto px-5 lg:px-0 py-20 grid grid-cols-1 md:grid-cols-2 gap-5 items-center">
-        <img src={HEADING} alt="" />
+        <img src={HEADING} alt="" draggable="false"  />
 
         <p
           className="p-6 bg-no-repeat bg-cover h-[200px] font-mono text-md font-semibold"

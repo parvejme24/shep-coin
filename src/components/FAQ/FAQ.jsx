@@ -55,10 +55,10 @@ export default function FAQ() {
       className="py-20 bg-[#1788A8] bg-cover bg-center"
       style={{ backgroundImage: `url(${FAQ_BG})` }}
     >
-      <div className="max-w-7xl container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
+      <div className="container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">
         {/* Left Section */}
         <div className="mx-auto lg:mx-0">
-          <img src={FAQIMAGE} alt="FAQ" />
+          <img src={FAQIMAGE} alt="FAQ" draggable="false" />
         </div>
 
         {/* Right Section */}
@@ -76,13 +76,13 @@ export default function FAQ() {
                 }}
               >
                 <div className="w-1 h-1 bg-white rounded-full"></div>
-                {faq.question}
+                <p className="tracking-[0.14em]">{faq.question}</p>
               </button>
 
               {/* Answer Section */}
               {activeIndex === index && (
                 <p
-                  className="-mt-4 max-w-[600px] text-gray-700 p-5 font-comicsans"
+                  className="-mt-4 ml-2 max-w-[600px] text-gray-700 p-5 font-comicsans"
                   style={{
                     backgroundImage: `url(${FAQ_A_BG})`,
                     backgroundRepeat: "no-repeat",

@@ -10,6 +10,8 @@ import {
 import FL_BG from "../../assets/footer/fl-bg.png";
 import FD_BG from "../../assets/footer/fd-bg.png";
 import FOOTER_IMG from "../../assets/footer/footer-image.png";
+import LOGO_IMG from "../../assets/footer/logo-img.png";
+import LOGO_TXT from "../../assets/footer/logo-txt.png";
 
 export default function Footer() {
   return (
@@ -21,12 +23,13 @@ export default function Footer() {
         className="bg-cover bg-center text-white h-auto mt-1"
         style={{ backgroundImage: `url(${FD_BG})` }}
       >
-        <div className="max-w-7xl container mx-auto px-4 py-10">
+        <div className="container mx-auto px-4 py-10">
           {/* Logo and Social Links Section */}
           <div className="flex flex-col md:flex-row justify-between items-center">
             {/* Logo */}
-            <div className="mb-6 md:mb-0">
-              <h2 className="text-3xl font-bold">LOGO</h2>
+            <div className="mb-6 md:mb-0 flex items-center">
+              <img src={LOGO_IMG} alt="" className="w-24" draggable="false" />
+              <img src={LOGO_TXT} alt="" className="w-20" draggable="false" />
             </div>
 
             {/* Social Media Links */}
@@ -79,7 +82,7 @@ export default function Footer() {
             </ul>
 
             <div className="">
-              <img src={FOOTER_IMG} alt="" className="" />
+              <img src={FOOTER_IMG} alt="" className="" draggable="false" />
             </div>
           </div>
         </div>
