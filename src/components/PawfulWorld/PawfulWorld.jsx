@@ -5,6 +5,7 @@ import H2BG from "../../assets/pawfulworld/h2-bg.png";
 import H3BG from "../../assets/pawfulworld/h3-bg.png";
 import H4BG from "../../assets/pawfulworld/h4-bg.png";
 import PAW from "../../assets/pawfulworld/paw.png";
+import BG from "../../assets/pawfulworld/bg.png";
 import LOGO_IMG from "../../assets/footer/logo-img.png";
 
 export default function PawfulWorld() {
@@ -55,7 +56,10 @@ export default function PawfulWorld() {
   ];
 
   return (
-    <div className="bg-[#1788A8] py-20 border-t-8 border-white">
+    <div
+      className="bg-[#1788A8] py-20 border-t-8 border-white bg-no-repeat bg-center bg-cover"
+      style={{ backgroundImage: `url(${BG})` }}
+    >
       <div className="max-w-7xl mx-auto px-5 lg:px-10">
         {/* Header Image */}
         <div className="relative flex justify-center">

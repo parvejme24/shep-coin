@@ -1,45 +1,79 @@
 import React from "react";
 import HEADING from "../../assets/tokenomics/heading.png";
 import DOG from "../../assets/tokenomics/dog.png";
-import SHEP from "../../assets/tokenomics/shep.png";
-import BG from "../../assets/tokenomics/tokenomic-bg.png";
-import S1 from "../../assets/tokenomics/s1.png";
-import S2 from "../../assets/tokenomics/s2.png";
 import CIRCLE from "../../assets/tokenomics/circle.png";
+import G from "../../assets/tokenomics/g.png";
 
 export default function TokenOmics() {
   return (
     <div
-      className="py-10 bg-no-repeat bg-cover"
-      style={{ backgroundImage: `url(${BG})` }}
+      className="bg-[#026D90] border-t-8 border-white pb-20"
+      // style={{ backgroundImage: `url(${BG})` }}
     >
-      <div className="container mx-auto">
-        <div className="flex flex-col items-center relative">
-          <img src={DOG} alt="" draggable="false" />
-          <img
-            src={HEADING}
-            alt=""
-            className="absolute bottom-0"
-            draggable="false"
-          />
-        </div>
+      <div className="relative flex justify-center">
+        <img
+          src={DOG}
+          alt="Dog Illustration"
+          className="mx-auto"
+          draggable="false"
+        />
+        <img
+          src={HEADING}
+          alt="Heading"
+          className="absolute bottom-0"
+          draggable="false"
+        />
+      </div>
 
-        <div className="mt-10 relative w-full max-w-[600px] mx-auto">
-          <p
-            className="text-lg p-5 bg-no-repeat bg-center bg-cover font-halodick tracking-[0.02em] w-full max-w-[600px] mx-auto"
-            style={{ backgroundImage: `url(${S1})` }}
-          >
-            The animal shelter fund will be managed based on community votes to
-            ensure transparency and alignment with SHEP’s mission. Team tokens
-            will be locked for one year and cannot be sold.
+      <img
+        src={G}
+        alt="G Illustration"
+        className="mx-auto mt-5"
+        draggable="false"
+      />
+
+      <div className="max-w-[800px] mx-auto relative font-halodick text-white tracking-wide">
+        <img
+          src={CIRCLE}
+          alt="Circle Illustration"
+          className="mx-auto py-16 md:py-32"
+        />
+
+        {/* Text Positioning */}
+        <div className="absolute top-16 left-1/2 transform -translate-x-1/2 text-center px-4">
+          <p className="text-sm md:text-lg ">
+            Marketing & Partnerships: <br /> 5% (5 billion)
           </p>
-          <img src={S2} alt="" className="absolute top-5 left-5 -z-10" />
         </div>
 
-        <div>
-          <img src={CIRCLE} alt="" className="mx-auto" draggable="false" />
+        <div className="absolute top-1/3 left-5 text-center px-4">
+          <p className="text-sm md:text-lg">
+            Staking Rewards: <br /> 15% (15 billion)
+          </p>
+        </div>
+
+        <div className="absolute top-1/3 right-5 text-center px-4">
+          <p className="text-sm md:text-lg">
+            Airdrop: <br /> 20% (20 billion)
+          </p>
+        </div>
+
+        <div className="absolute top-1/2 left-5 text-center px-4">
+          <p className="text-sm md:text-lg">
+            Pre-Sale: <br /> 30% (30 billion)
+          </p>
+        </div>
+
+        <div className="absolute top-3/4 right-5 text-center px-4">
+          <p className="text-sm md:text-lg">
+            Shelter Fund: <br /> 30% (30 billion) Community voted
+          </p>
         </div>
       </div>
+
+      <p className="text-center font-halodick text-white">
+        Team: 5% (5 billion) - Locked for 1 year post-launch!
+      </p>
     </div>
   );
 }
