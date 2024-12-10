@@ -99,7 +99,7 @@ export default function RoadMap() {
           <img
             src={DOG}
             alt=""
-            className="w-[250px] md:w-[400px] absolute left-0 bottom-0"
+            className="w-[250px] md:w-[400px] absolute left-0 -bottom-6"
             draggable="false"
           />
           <img

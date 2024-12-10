@@ -22,7 +22,7 @@ export default function Banner() {
           <img
             src={BANNER_IMAGE}
             alt="Banner"
-            className="mx-auto max-w-[600px] w-[600px]"
+            className="mx-auto md:max-w-[600px] md:w-[600px] ml-5 md:ml-auto"
             draggable="false"
           />
           <p className="font-halodick text-white text-center max-w-[600px]">

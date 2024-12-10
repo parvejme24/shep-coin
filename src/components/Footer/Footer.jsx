@@ -34,38 +34,40 @@ export default function Footer() {
             </div>
 
             {/* Social Media Links */}
-            <ul className="flex space-x-4 text-xl">
-              <li>
-                <a
-                  href="https://t.me/Shepchain"
-                  target="_blank"
-                  className="border border-white text-white p-1 rounded-full inline-block"
-                  aria-label="Telegram"
-                >
-                  <FaTelegramPlane />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://x.com/shepchain"
-                  target="_blank"
-                  className="border border-white text-white p-1 rounded-full inline-block"
-                  aria-label="Twitter"
-                >
-                  <FaTwitter />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="https://discord.com/invite/9gsBaMGBv2"
-                  target="_blank"
-                  className="border border-white text-white p-1 rounded-full inline-block"
-                  aria-label="WhatsApp"
-                >
-                  <FaDiscord />
-                </a>
-              </li>
-            </ul>
+            <div className="w-full flex justify-center md:w-auto ml-5 md:mx-0">
+              <ul className="flex space-x-4 text-xl">
+                <li>
+                  <a
+                    href="https://t.me/Shepchain"
+                    target="_blank"
+                    className="border border-white text-white p-1 rounded-full inline-block"
+                    aria-label="Telegram"
+                  >
+                    <FaTelegramPlane />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://x.com/shepchain"
+                    target="_blank"
+                    className="border border-white text-white p-1 rounded-full inline-block"
+                    aria-label="Twitter"
+                  >
+                    <FaTwitter />
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://discord.com/invite/9gsBaMGBv2"
+                    target="_blank"
+                    className="border border-white text-white p-1 rounded-full inline-block"
+                    aria-label="WhatsApp"
+                  >
+                    <FaDiscord />
+                  </a>
+                </li>
+              </ul>
+            </div>
 
             <div className="">
               <img

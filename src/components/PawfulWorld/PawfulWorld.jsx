@@ -58,7 +58,7 @@ export default function PawfulWorld() {
 
   return (
     <div
-      className="relative bg-[#1788A8] pt-20 pb-36 border-t-8 border-white bg-no-repeat bg-center bg-cover"
+      className="relative bg-[#1788A8] pt-20 pb-[300px] border-t-8 border-white bg-no-repeat bg-center bg-cover"
       style={{ backgroundImage: `url(${BG})` }}
     >
       <div className="max-w-7xl container mx-auto px-5 lg:px-20">
