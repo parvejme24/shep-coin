@@ -17,7 +17,7 @@ export default function App() {
       <Banner />
       <Shep />
       <WhoAreWe />
-      <TokenOmics />
+      {/* <TokenOmics /> */}
       {/* <GamePlay /> */}
       <PawfulWorld />
       <RoadMap />

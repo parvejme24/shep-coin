@@ -53,7 +53,7 @@ export default function RoadMap() {
 
   return (
     <div
-      className="bg-[#19809D] bg-no-repeat bg-center bg-cover pt-10 pb-20"
+      className="bg-[#19809D] bg-no-repeat bg-center bg-cover pt-10 pb-20 border-t-8 border-white"
       style={{ backgroundImage: `url(${FRAME})` }}
     >
       <div className="max-w-7xl container mx-auto px-5 lg:px-0">

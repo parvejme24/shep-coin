@@ -11,8 +11,8 @@ export default function Navbar() {
   };
 
   return (
-    <nav className="bg-white shadow-md tracking-[0.14em]">
-      <div className="max-w-7xl container mx-auto flex justify-between items-center py-5 px-4 md:px-0">
+    <nav className="z-50 bg-transparent tracking-[0.14em]">
+      <div className="max-w-7xl container mx-auto flex justify-between items-center py-5 px-5 md:px-0">
         {/* Logo */}
         <img src={LOGO} alt="Logo" className="w-24" draggable="false" />
 
@@ -49,7 +49,7 @@ export default function Navbar() {
         {/* Mobile Menu Button */}
         <button
           onClick={toggleMenu}
-          className="md:hidden text-gray-800 text-2xl"
+          className="md:hidden text-[#F12143] text-3xl"
         >
           {isMenuOpen ? <FaTimes /> : <FaBars />}
         </button>
@@ -57,8 +57,8 @@ export default function Navbar() {
 
       {/* Mobile Menu */}
       {isMenuOpen && (
-        <div className="md:hidden bg-[#5EC8EE] shadow-md absolute w-full -mt-5">
-          <ul className="flex flex-col items-center gap-6 py-4 font-comicsans text-gray-800">
+        <div className="md:hidden bg-[#5EC8EE] shadow-md absolute w-full -mt-5 py-5">
+          <ul className="flex flex-col items-center gap-3 py-4 font-halodick text-white">
             <li>
               <a
                 href="/"

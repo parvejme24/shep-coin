@@ -55,7 +55,7 @@ export default function PawfulWorld() {
   ];
 
   return (
-    <div className="bg-[#1788A8] py-20">
+    <div className="bg-[#1788A8] py-20 border-t-8 border-white">
       <div className="max-w-7xl mx-auto px-5 lg:px-10">
         {/* Header Image */}
         <div className="relative flex justify-center">
