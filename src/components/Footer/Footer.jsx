@@ -5,6 +5,7 @@ import {
   FaInstagram,
   FaTwitter,
   FaWhatsapp,
+  FaDiscord,
 } from "react-icons/fa";
 
 import FL_BG from "../../assets/footer/fl-bg.png";
@@ -36,7 +37,8 @@ export default function Footer() {
             <ul className="flex space-x-4 text-xl">
               <li>
                 <a
-                  href="#"
+                  href="https://t.me/Shepchain"
+                  target="_blank"
                   className="border border-white text-white p-1 rounded-full inline-block"
                   aria-label="Telegram"
                 >
@@ -45,25 +47,8 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
-                  className="border border-white text-white p-1 rounded-full inline-block"
-                  aria-label="TikTok"
-                >
-                  <FaTiktok />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
-                  className="border border-white text-white p-1 rounded-full inline-block"
-                  aria-label="Instagram"
-                >
-                  <FaInstagram />
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#"
+                  href="https://x.com/shepchain"
+                  target="_blank"
                   className="border border-white text-white p-1 rounded-full inline-block"
                   aria-label="Twitter"
                 >
@@ -72,11 +57,12 @@ export default function Footer() {
               </li>
               <li>
                 <a
-                  href="#"
+                  href="https://discord.com/invite/9gsBaMGBv2"
+                  target="_blank"
                   className="border border-white text-white p-1 rounded-full inline-block"
                   aria-label="WhatsApp"
                 >
-                  <FaWhatsapp />
+                  <FaDiscord />
                 </a>
               </li>
             </ul>

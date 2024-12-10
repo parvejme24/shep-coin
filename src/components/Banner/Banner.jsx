@@ -7,6 +7,7 @@ import { FaArrowRight } from "react-icons/fa";
 export default function Banner() {
   return (
     <div
+      id="home"
       className="overflow-hidden -mt-[110px] min-h-screen bg-cover bg-center"
       style={{ backgroundImage: `url(${BANNER_BG})` }}
     >
@@ -15,13 +16,13 @@ export default function Banner() {
           <img
             src={HEADING}
             alt="Heading"
-            className="w-auto max-w-full"
+            className="w-full"
             draggable="false"
           />
           <img
             src={BANNER_IMAGE}
             alt="Banner"
-            className="mx-auto max-w-[450px] w-[450px]"
+            className="mx-auto max-w-[600px] w-[600px]"
             draggable="false"
           />
           <p className="font-halodick text-white text-center max-w-[600px]">

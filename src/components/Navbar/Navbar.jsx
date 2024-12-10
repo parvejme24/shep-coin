@@ -19,32 +19,46 @@ export default function Navbar() {
         {/* Desktop Menu */}
         <ul className="hidden md:flex items-center gap-8 font-halodick text-gray-100 font-light">
           <li>
-            <a href="/" className="hover:text-red-500 transition duration-300">
+            <a
+              href="#home"
+              className="hover:text-red-500 transition duration-300"
+            >
               Home
             </a>
           </li>
           <li>
-            <a href="/" className="hover:text-red-500 transition duration-300">
+            <a
+              href="#about"
+              className="hover:text-red-500 transition duration-300"
+            >
               About Us
             </a>
           </li>
           <li>
-            <a href="/" className="hover:text-red-500 transition duration-300">
+            <a
+              href="#tokenomics"
+              className="hover:text-red-500 transition duration-300"
+            >
               Tokenomics
             </a>
           </li>
           <li>
-            <a href="/" className="hover:text-red-500 transition duration-300">
+            <a
+              href="#faq"
+              className="hover:text-red-500 transition duration-300"
+            >
               FAQ
             </a>
           </li>
         </ul>
 
         {/* Apply Button */}
-        <button
+        <a
+          href="https://docs.google.com/forms/d/e/1FAIpQLSfYGn6ocM1p2dU2lMg1ibEPKof40-bIAgUqXabNJkhL1tFvDQ/viewform"
+          target="_blank"
           className="w-[250px] h-[45px] bg-no-repeat bg-cover bg-center hidden md:flex"
           style={{ backgroundImage: `url(${BTN_BG})` }}
-        ></button>
+        ></a>
 
         {/* Mobile Menu Button */}
         <button
@@ -61,7 +75,7 @@ export default function Navbar() {
           <ul className="flex flex-col items-center gap-3 py-4 font-halodick text-white">
             <li>
               <a
-                href="/"
+                href="#home"
                 className="hover:text-red-500 transition duration-300"
                 onClick={toggleMenu}
               >
@@ -70,7 +84,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/"
+                href="#about"
                 className="hover:text-red-500 transition duration-300"
                 onClick={toggleMenu}
               >
@@ -79,7 +93,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/"
+                href="#tokenomics"
                 className="hover:text-red-500 transition duration-300"
                 onClick={toggleMenu}
               >
@@ -88,7 +102,7 @@ export default function Navbar() {
             </li>
             <li>
               <a
-                href="/"
+                href="#faq"
                 className="hover:text-red-500 transition duration-300"
                 onClick={toggleMenu}
               >
@@ -99,10 +113,12 @@ export default function Navbar() {
 
           {/* Mobile Apply Button */}
           <div className="flex justify-center">
-            <button
+            <a
+              href="https://docs.google.com/forms/d/e/1FAIpQLSfYGn6ocM1p2dU2lMg1ibEPKof40-bIAgUqXabNJkhL1tFvDQ/viewform"
+              target="_blank"
               className="w-[250px] h-[45px] bg-no-repeat bg-cover bg-center"
               style={{ backgroundImage: `url(${BTN_BG})` }}
-            ></button>
+            ></a>
           </div>
         </div>
       )}

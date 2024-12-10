@@ -52,7 +52,8 @@ export default function FAQ() {
 
   return (
     <div
-      className="pt-20 pb-[300px] bg-[#1788A8] bg-cover bg-center border-t-8 border-white"
+      id="faq"
+      className="pt-20 pb-[300px] bg-[#1788A8] bg-cover bg-center border-t-8 border-white mt-4"
       style={{ backgroundImage: `url(${FAQ_BG})` }}
     >
       <div className="max-w-7xl px-5 lg:px-0 container mx-auto grid grid-cols-1 lg:grid-cols-2 gap-10 items-center">

@@ -6,6 +6,7 @@ import SHEP from "../../assets/whoWeAre/shep.png";
 export default function WhoAreWe() {
   return (
     <div
+      id="about"
       className="-mt-10 bg-[#3199BB] bg-no-repeat bg-cover bg-center py-36 lg:py-20"
       style={{ backgroundImage: `url(${BG})` }}
     >

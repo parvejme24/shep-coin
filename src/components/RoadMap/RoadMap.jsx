@@ -6,6 +6,8 @@ import P1 from "../../assets/roadmap/p1.png";
 import P2 from "../../assets/roadmap/p2.png";
 import P3 from "../../assets/roadmap/p3.png";
 import P4 from "../../assets/roadmap/p4.png";
+import DOG from "../../assets/roadmap/dog.png";
+import BOTTOM_FRAME from "../../assets/roadmap/bottom-frame.png";
 
 export default function RoadMap() {
   const data = [
@@ -53,10 +55,10 @@ export default function RoadMap() {
 
   return (
     <div
-      className="bg-[#19809D] bg-no-repeat bg-center bg-cover pt-10 pb-20 border-t-8 border-white"
+      className="relative bg-[#19809D] bg-no-repeat bg-center bg-cover pt-10 pb-[400px] border-t-8 border-white"
       style={{ backgroundImage: `url(${FRAME})` }}
     >
-      <div className="max-w-7xl container mx-auto px-5 lg:px-0">
+      <div className="max-w-7xl container mx-auto px-5 lg:px-20">
         <div className="flex flex-col items-center relative">
           <img src={PAW} alt="" draggable="false" />
           <img
@@ -89,6 +91,23 @@ export default function RoadMap() {
               </div>
             </div>
           ))}
+        </div>
+      </div>
+
+      <div className="absolute -bottom-3 w-[100%]">
+        <div className="flex items-center relative">
+          <img
+            src={DOG}
+            alt=""
+            className="w-[250px] md:w-[400px] absolute left-0 bottom-0"
+            draggable="false"
+          />
+          <img
+            src={BOTTOM_FRAME}
+            alt=""
+            className="w-full h-[180px] md:h-[300px]"
+            draggable="false"
+          />
         </div>
       </div>
     </div>

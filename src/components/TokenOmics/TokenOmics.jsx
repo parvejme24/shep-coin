@@ -6,7 +6,7 @@ import G from "../../assets/tokenomics/g.png";
 
 export default function TokenOmics() {
   return (
-    <div className="bg-[#026D90] border-t-8 border-white pb-20">
+    <div id="tokenomics" className="bg-[#026D90] border-t-8 border-white pb-20">
       <div className="max-w-7xl px-5 container mx-auto">
         <div className="relative flex justify-center">
           <img
