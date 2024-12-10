@@ -4,7 +4,7 @@ import H1BG from "../../assets/pawfulworld/h1-bg.png";
 import H2BG from "../../assets/pawfulworld/h2-bg.png";
 import H3BG from "../../assets/pawfulworld/h3-bg.png";
 import H4BG from "../../assets/pawfulworld/h4-bg.png";
-
+import PAW from "../../assets/pawfulworld/paw.png";
 import LOGO_IMG from "../../assets/footer/logo-img.png";
 
 export default function PawfulWorld() {
@@ -55,31 +55,56 @@ export default function PawfulWorld() {
   ];
 
   return (
-    <div className="bg-[#1788A8] py-[150px]">
-      <div className="max-w-7xl container mx-auto px-5 lg:px-0">
-        <img src={HEADING} alt="" className="mx-auto" draggable="false" />
-        <p className="tracking-[0.13em] font-halodick font-light text-white mt-5 max-w-[800px] mx-auto text-center">
+    <div className="bg-[#1788A8] py-20">
+      <div className="max-w-7xl mx-auto px-5 lg:px-10">
+        {/* Header Image */}
+        <div className="relative flex justify-center">
+          <img
+            src={PAW}
+            alt=""
+            className="mx-auto w-[150px]"
+            draggable="false"
+          />
+          <img
+            src={HEADING}
+            alt="Pawful World"
+            className="mx-auto w-full max-w-[400px] absolute bottom-3"
+            draggable="false"
+          />
+        </div>
+
+        {/* Description */}
+        <p className="tracking-[0.13em] font-halodick font-light text-white mt-5 max-w-[800px] mx-auto text-center text-sm md:text-base lg:text-lg">
           At SHEP, we’re combining fun gameplay with real-world impact. Join us
           on a puppy-filled adventure where your actions in-game directly
           contribute to animal welfare. Here’s what you can expect:
         </p>
 
-        <div className="mt-10 grid grid-cols-1 md:grid-cols-2 gap-14">
+        {/* Features Grid */}
+        <div className="mt-20 grid grid-cols-1 md:grid-cols-2 gap-16">
           {data.map((item) => (
             <div key={item.id}>
-              <h3
-                className="relative px-6 py-4 lg:text-xl h-20 bg-contain uppercase font-halodick text-white font-semibold bg-no-repeat tracking-[0.18em] flex items-center"
-                style={{ backgroundImage: `url(${item.titleBG})` }}
-              >
-                {item.title}
+              {/* Title Section */}
+              <div className="relative flex items-center justify-center">
+                <h3 className="absolute uppercase font-halodick text-white font-semibold tracking-[0.18em] text-center text-base lg:text-xl">
+                  {item.title}
+                </h3>
                 <img
-                  src={LOGO_IMG}
+                  src={item.titleBG}
                   alt=""
-                  className="w-14 absolute -top-6 -left-6"
+                  className="h-[60px] w-full"
                   draggable="false"
                 />
-              </h3>
-              <ol className="mt-4 font-halodick tracking-[0.08em] space-y-2 list-decimal ml-6 text-white ">
+                <img
+                  src={LOGO_IMG}
+                  alt="Logo"
+                  className="w-10 lg:w-14 absolute -top-4 -left-4 lg:-top-6 lg:-left-6"
+                  draggable="false"
+                />
+              </div>
+
+              {/* Features List */}
+              <ol className="mt-4 font-halodick tracking-[0.08em] space-y-2 list-decimal pl-6 text-white text-sm md:text-base">
                 {item.features.map((listItem, index) => (
                   <li key={index}>{listItem}</li>
                 ))}

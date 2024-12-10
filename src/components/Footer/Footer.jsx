@@ -23,13 +23,13 @@ export default function Footer() {
         className="bg-cover bg-center text-white h-auto mt-1"
         style={{ backgroundImage: `url(${FD_BG})` }}
       >
-        <div className="container mx-auto px-4 py-10">
+        <div className="max-w-7xl px-5 lg:px-0 container mx-auto pt-20 pb-10 md:py-[200px] relative">
           {/* Logo and Social Links Section */}
-          <div className="flex flex-col md:flex-row justify-between items-center">
+          <div className="md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-5 md:gap-10">
             {/* Logo */}
             <div className="mb-6 md:mb-0 flex items-center">
-              <img src={LOGO_IMG} alt="" className="w-24" draggable="false" />
-              <img src={LOGO_TXT} alt="" className="w-20" draggable="false" />
+              <img src={LOGO_IMG} alt="" className="w-16" />
+              <img src={LOGO_TXT} alt="" className="w-14" />
             </div>
 
             {/* Social Media Links */}
@@ -82,7 +82,12 @@ export default function Footer() {
             </ul>
 
             <div className="">
-              <img src={FOOTER_IMG} alt="" className="" draggable="false" />
+              <img
+                src={FOOTER_IMG}
+                alt=""
+                className="w-[50%] sm:w-[40%] md:w-[35%] lg:w-[35%] mx-auto md:absolute bottom-28 right-0"
+                draggable="false"
+              />
             </div>
           </div>
         </div>
