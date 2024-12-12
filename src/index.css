@@ -6,6 +6,18 @@ html {
   scroll-behavior: smooth;
 }
 
+.outline-effect {
+  -webkit-text-stroke-width: 0.5px;
+  letter-spacing: 1px;
+  -webkit-text-stroke-color: black;
+}
+
+.outline-effect-nav {
+  -webkit-text-stroke-width: 0.3px !important;
+  letter-spacing: 1px !important;
+  -webkit-text-stroke-color: black !important;
+}
+
 /* Halo Dick Fonts */
 @font-face {
   font-family: "HaloDek-MAdae";
@@ -25,7 +37,7 @@ html {
   font-style: normal;
 }
 
-/* Comic Sans MS Fonts */
+/* Comic Sans MS Fonts
 @font-face {
   font-family: "COMIC";
   src: url("./assets/fonts/COMIC.woff2") format("woff2"),
@@ -80,10 +92,4 @@ html {
   font-weight: bold;
   font-style: italic;
 }
-
-/* Reset for Consistency */
-body {
-  margin: 0;
-  padding: 0;
-  font-family: system-ui, sans-serif;
-}
+ */

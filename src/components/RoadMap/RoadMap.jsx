@@ -1,4 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
+
 import FRAME from "../../assets/roadmap/frame.png";
 import PAW from "../../assets/roadmap/paw.png";
 import TITLE from "../../assets/roadmap/title.png";
@@ -53,12 +56,17 @@ export default function RoadMap() {
     },
   ];
 
+  useEffect(() => {
+    AOS.init({ duration: 1200, once: true });
+  }, []);
+
   return (
     <div
+      id="roadmap"
       className="relative bg-[#19809D] bg-no-repeat bg-center bg-cover pt-10 pb-[400px] border-t-8 border-white"
       style={{ backgroundImage: `url(${FRAME})` }}
     >
-      <div className="max-w-7xl container mx-auto px-5 lg:px-20">
+      <div className="max-w-7xl container mx-auto px-10 lg:px-0">
         <div className="flex flex-col items-center relative">
           <img src={PAW} alt="" draggable="false" />
           <img
@@ -66,6 +74,7 @@ export default function RoadMap() {
             alt=""
             className="absolute bottom-5"
             draggable="false"
+            data-aos="fade-up"
           />
         </div>
 
@@ -73,17 +82,23 @@ export default function RoadMap() {
           {data.map((item, index) => (
             <div
               key={item.id}
-              className={`
-                ${index === 1 ? "lg:mt-[200px] md:mt-[50px] mt-0" : ""}
-                ${index === 3 ? "lg:mt-[400px] md:mt-[100px] mt-0" : ""}
-              `}
+              className={`${
+                index === 1 ? "lg:mt-[200px] md:mt-[50px] mt-0" : ""
+              } ${index === 3 ? "lg:mt-[400px] md:mt-[100px] mt-0" : ""}`}
+              data-aos="fade-up"
+              data-aos-delay={index * 200}
             >
-              <img src={item.image} alt="" draggable="false" />
-              <div>
-                <h3 className="text-md font-halodick text-white tracking-widest">
+              <img
+                src={item.image}
+                alt=""
+                draggable="false"
+                data-aos="zoom-in"
+              />
+              <div data-aos="fade-up" data-aos-delay={index * 300}>
+                <h3 className="outline-effect text-2xl mt-5 font-halodick text-white tracking-widest">
                   {item.title}
                 </h3>
-                <ul className="mt-2 list-disc text-white font-mono text-xs">
+                <ul className="mt-3 list-disc text-white font-mono text-lg space-y-2">
                   {item.features.map((oneFeature, i) => (
                     <li key={i}>{oneFeature}</li>
                   ))}
@@ -101,6 +116,8 @@ export default function RoadMap() {
             alt=""
             className="w-[250px] md:w-[400px] absolute left-0 -bottom-6"
             draggable="false"
+            data-aos="fade-right"
+            data-aos-duration="1500"
           />
           <img
             src={BOTTOM_FRAME}

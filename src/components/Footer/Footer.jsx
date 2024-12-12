@@ -1,12 +1,5 @@
 import React from "react";
-import {
-  FaTelegramPlane,
-  FaTiktok,
-  FaInstagram,
-  FaTwitter,
-  FaWhatsapp,
-  FaDiscord,
-} from "react-icons/fa";
+import { FaTelegramPlane, FaTwitter, FaDiscord } from "react-icons/fa";
 
 import FL_BG from "../../assets/footer/fl-bg.png";
 import FD_BG from "../../assets/footer/fd-bg.png";
@@ -17,7 +10,7 @@ import LOGO_TXT from "../../assets/footer/logo-txt.png";
 export default function Footer() {
   return (
     <div
-      className="bg-cover bg-center text-white h-auto -mt-[100px] pt-1"
+      className="bg-cover bg-center text-white -mt-[100px] pt-1"
       style={{ backgroundImage: `url(${FL_BG})` }}
     >
       <div
@@ -29,8 +22,8 @@ export default function Footer() {
           <div className="md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-5 md:gap-10">
             {/* Logo */}
             <div className="mb-6 md:mb-0 flex items-center">
-              <img src={LOGO_IMG} alt="" className="w-16" />
-              <img src={LOGO_TXT} alt="" className="w-14" />
+              <img src={LOGO_IMG} alt="" className="w-16" draggable="false" />
+              <img src={LOGO_TXT} alt="" className="w-14" draggable="false" />
             </div>
 
             {/* Social Media Links */}
