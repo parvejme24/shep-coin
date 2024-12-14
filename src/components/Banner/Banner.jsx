@@ -40,7 +40,7 @@ export default function Banner() {
           {/* Description */}
           <p
             data-aos="fade-up"
-            className="font-halodick text-2xl font-semibold text-white text-center max-w-[600px] outline-effect"
+            className="font-halodick text-2xl font-semibold text-white text-center max-w-[900px] outline-effect"
           >
             Every token helps make a difference for animal shelters worldwide.
             Join our mission to support animals and create a vibrant,

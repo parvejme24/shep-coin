@@ -4,8 +4,7 @@ import { FaTelegramPlane, FaTwitter, FaDiscord } from "react-icons/fa";
 import FL_BG from "../../assets/footer/fl-bg.png";
 import FD_BG from "../../assets/footer/fd-bg.png";
 import FOOTER_IMG from "../../assets/footer/footer-image.png";
-import LOGO_IMG from "../../assets/footer/logo-img.png";
-import LOGO_TXT from "../../assets/footer/logo-txt.png";
+import LOGO from "../../assets/logo.png";
 
 export default function Footer() {
   return (
@@ -22,8 +21,7 @@ export default function Footer() {
           <div className="md:grid md:grid-cols-3 flex flex-wrap justify-center items-center gap-5 md:gap-10">
             {/* Logo */}
             <div className="mb-6 md:mb-0 flex items-center">
-              <img src={LOGO_IMG} alt="" className="w-16" draggable="false" />
-              <img src={LOGO_TXT} alt="" className="w-14" draggable="false" />
+              <img src={LOGO} alt="" />
             </div>
 
             {/* Social Media Links */}

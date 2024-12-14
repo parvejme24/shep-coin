@@ -32,7 +32,7 @@ export default function Navbar() {
     >
       <div className="max-w-7xl container mx-auto flex justify-between items-center py-5 px-5 lg:px-0">
         {/* Logo */}
-        <img src={LOGO} alt="Logo" className="w-24" draggable="false" />
+        <img src={LOGO} alt="Logo" className="w-36" draggable="false" />
 
         {/* Desktop Menu */}
         <ul className="outline-effect-nav hidden lg:flex items-center gap-8 font-halodick text-gray-100 font-light">
