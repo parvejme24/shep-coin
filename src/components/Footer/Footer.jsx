@@ -25,7 +25,29 @@ export default function Footer() {
             </div>
 
             {/* Social Media Links */}
-            <div className="w-full flex justify-center md:w-auto ml-5 md:mx-0">
+            <div className="w-full flex flex-col  justify-center items-center gap-5 md:w-auto ml-5 md:mx-0">
+              {/* links  */}
+              <ul className="text-center space-y-1">
+                <li>
+                  <a
+                    className="hover:underline hover:text-gray-400 duration-300"
+                    href="https://drive.google.com/file/d/1QIbh_ehmssAjHFwQhmjYI4Z7CwnlyPFt/view"
+                    target="_blank"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    className="hover:underline hover:text-gray-400 duration-300"
+                    href="https://drive.google.com/file/d/1MOJ1bz6kIPkGCmC38e9LQ9sXOaR5KsoV/view"
+                    target="_blank"
+                  >
+                    Terms & Conditions
+                  </a>
+                </li>
+              </ul>
+
               <ul className="flex space-x-4 text-xl">
                 <li>
                   <a

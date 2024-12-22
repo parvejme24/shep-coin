@@ -18,13 +18,13 @@ export default function FAQ() {
       id: 1,
       question: "What is SHEP Token?",
       answer:
-        "SHEP is a cryptocurrency built on the Solana blockchain, focused on supporting animal shelters worldwide through community involvement and entertainment.",
+        "SHEP is a cryptocurrency built on the Cronos blockchain, focused on supporting animal shelters worldwide through community involvement and entertainment.",
     },
     {
       id: 2,
       question: "How does SHEP support animal shelters?",
       answer:
-        "A portion of the token supply (30%) is allocated to a Shelter Fund, which is managed by the community through voting.",
+        "A portion of the token supply (20%) is allocated to a Shelter Fund, which is managed by the community through voting.",
     },
     {
       id: 3,

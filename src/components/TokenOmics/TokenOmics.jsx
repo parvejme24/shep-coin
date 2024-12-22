@@ -101,13 +101,13 @@ export default function TokenOmics() {
         </div> */}
 
         <div className="my-20 flex justify-center">
-          <img src={TOKENOMIC_ITEM} alt="" draggable="false" />
+          <img src={TOKENOMIC_ITEM} alt="" draggable="false" className="md:max-w-[600px] w-[600px]" />
         </div>
 
         {/* Team Section with AOS Animation */}
-        <p className="text-center font-halodick text-white mt-14 md:mt-10 px-4 outline-effect">
+        {/* <p className="text-center font-halodick text-white mt-14 md:mt-10 px-4 outline-effect">
           Team: 5% (5 billion) - Locked for 1 year post-launch!
-        </p>
+        </p> */}
       </div>
     </div>
   );
