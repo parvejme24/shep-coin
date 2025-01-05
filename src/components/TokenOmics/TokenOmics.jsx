@@ -4,7 +4,6 @@ import "aos/dist/aos.css";
 import smoothscroll from "smoothscroll-polyfill";
 import HEADING from "../../assets/tokenomics/heading.png";
 import DOG from "../../assets/tokenomics/dog.png";
-import CIRCLE from "../../assets/tokenomics/circle.png";
 import G from "../../assets/tokenomics/g.png";
 import FRAME from "../../assets/roadmap/frame.png";
 import TOKENOMIC_ITEM from "../../assets/tokenomics/items.png";
